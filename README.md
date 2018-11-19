@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/java11-default-methods-conflicts.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-default-methods-conflicts)
+
 # java11-default-methods-conflicts
 Overview of default methods conflicts.
 
