@@ -29,4 +29,17 @@ Overview of default methods conflicts.
     ```
     assertThat(new CustomClass().get(), is("SuperClass"));
     ```
-* interface with interface conflict - compile time error
+    
+    Note that If we narrow scope of `get()` method in superclass
+    ```
+    class SuperClass {
+        String get() {
+            return "SuperClass";
+        }
+    }
+    ```
+    we obtain compile time error under
+    ```
+    class CustomClass extends SuperClass implements Interface1 {}
+    ```
+* interface with other interface conflict - compile time error
