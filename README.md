@@ -25,12 +25,12 @@ Overview of default methods conflicts.
         ```
     then if you call method `get()` on an instance
     of `CustomClass` it will be called method from
-    `SuperClass` (`CustomClassTest`):
+    `SuperClass`:
     ```
     assertThat(new CustomClass().get(), is("SuperClass"));
     ```
     
-    Note that If we narrow scope of `get()` method in superclass
+    **Note that If we narrow scope of `get()` method in superclass**
     ```
     class SuperClass {
         String get() {
@@ -38,7 +38,7 @@ Overview of default methods conflicts.
         }
     }
     ```
-    we obtain compile time error under
+    **we obtain compile time error under**
     ```
     class CustomClass extends SuperClass implements Interface1 {}
     ```
